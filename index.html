@@ -3,14 +3,16 @@
 <head>
 	<title>MY JOURNAL</title>
 	<link rel = "stylesheet" href = "journalstyle.css"/>
-	<script type = "text/javascript" src="index.js"></script>
+	<script type = "text/javascript" src = "index.js"></script>
 </head>
 <body>
 	<div class = "header">
 		<h1>Journal logo</h1>
 	</div>
-			
+	
 	<div class = "wrapper">
+		<marquee direction = "left" scrolldelay ="150" class ="scroll">
+			<p>REFLECTION IS AN IMPORTANT PART OF LEARNING AND GROWTH. KEEP A JOURNAL TODAY</p></marquee>
 		<div>
 			<form action = "" method = "GET" >
 			<div id = "form">
@@ -18,7 +20,7 @@
 				<legend>Bio Data:</legend>
 					<p><label for ="first name">Name: </label>
 					<input type ="text" name = "name" id = "name"/></p>
-			</fieldset><br/><br/>
+			</fieldset><br/>
 			<fieldset>
 				<legend>Daily Activities:</legend>
 				<p><label for ="Week">Week Days: </label>
@@ -34,9 +36,9 @@
 				<p><label for ="Question" >What did you do today?: </label></p>
 				<p><textarea id = "log" name = "Activities"></textarea></p>
 				<p><input id = "submit" type = "submit" value = "Log My Journal"></p>
-			</fieldset>
+			</fieldset><br/>
 		 </div>
-			<fieldset class = "p_Info">
+			<fieldset>
 				<legend>My Journal:</legend>
 					<div><p><label for ="first name">Name: </label></p><br/></div>
 					<div><p><label for ="Answer" >What I did today: </label></p></div>
@@ -46,8 +48,6 @@
 
 		
 	</div>
-
-</body>
 <footer>
 <div class = "footer"><br/>
 	<a href="">Legal Information</a> | 
@@ -55,3 +55,5 @@
 	Copyright &copy: BootCamp Group III 2016
 	</div>
 </footer>
+</body>
+</html>
