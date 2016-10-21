@@ -3,7 +3,7 @@
 <head>
 	<title>MY JOURNAL</title>
 	<link rel = "stylesheet" href = "journalstyle.css"/>
-	<script type = "text/javascript" src = "index.js"></script>
+<script type = "text/javascript" src="jquery-2.1.1.js"></script>
 </head>
 <body>
 	<div class = "header">
@@ -37,11 +37,12 @@
 				<p><textarea id = "log" name = "Activities"></textarea></p>
 				<p><input id = "submit" type = "submit" value = "Log My Journal"></p>
 			</fieldset><br/>
-		 </div>
+		</fieldset>
+	 </div>
 			<fieldset>
 				<legend>My Journal:</legend>
-					<div><p><label for ="first name">Name: </label></p><br/></div>
-					<div><p><label for ="Answer" >What I did today: </label></p></div>
+					<div id="display">name</div>
+					<div id="display-activites"><p><label for ="Answer" >What I did today: </label></p></div>
 			</fieldset>
 			</form>
 		</div>
@@ -51,8 +52,7 @@
 <footer>
 <div class = "footer"><br/>
 	<a href="">Legal Information</a> | 
-	<a href="">Privacy Policy</a> | <a href="">Terms of Use</a>| 
-	Copyright &copy: BootCamp Group III 2016
+	<a href="">Privacy Policy</a> | <a href="">Terms of Use</a>| Copyright &copy; BootCamp Group III 2016
 	</div>
 </footer>
 </body>

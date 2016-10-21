@@ -1,5 +1,9 @@
 # JournalApp-Grp3B
 
-## A Journal application where a user can be able to create a new journal,make a new journal entry, see a list of journal entries made and be able to view his last journal entry only.
+This is a journal application that allows a user to store his/her thoughts and ideas. We believe that writing down your personal thoughts is key to personal growth and development and we designed this app with that in mind. Using this app a user can do the following:
+
+- Create a journal
+- Create a journal entry
+- View previous entries he/she has created
 
 ### Authors: Akinwumi Samuel, Are Jorg, Rotimi Babalola, Oluwole Fasakin and Ijege Precious
