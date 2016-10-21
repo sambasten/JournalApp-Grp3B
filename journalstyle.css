@@ -1,0 +1,49 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+	text-indent: -9999px;
+	background-image: url(images/journal.jpg);
+	background-repeat: no-repeat;
+	height: 200px;
+	background-size: 25%;
+	margin: 0 auto;
+	width: 960px;
+	
+}
+
+.wrapper{
+	margin: 0 auto;
+	width: 960px;
+	margin-top: 10px;
+	border-bottom: 2px solid #2C8C67;
+	padding: 10px;
+}
+.p_Info label{
+	float: left;
+	width: 150px;
+}
+
+fieldset{
+	background-color: pink;
+	width: 960px;
+}
+fieldset legend{
+	font-weight: bold;
+}
+select{
+	width : 300px;
+	height: 30px;
+}
+#log{
+	width: 300px;
+	height: 350px;
+}
+
+p #submit{
+	padding:2px, 15px, 2px, 3px;
+
+}
+.footer{margin: 0 auto;
+	width: 960px;}
