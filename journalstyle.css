@@ -10,8 +10,7 @@ h1{
 	background-size: 25%;
 	margin: 0 auto;
 	width: 960px;
-	margin-left:500px;
-	
+	margin-left:550px;
 }
 
 .wrapper{
@@ -23,15 +22,22 @@ h1{
 }
 .p_Info label{
 	float: left;
-	width: 150px;
+	width: 88px;
 }
 
 fieldset{
 	background-color: pink;
-	width: 960px;
+	width: 500px;
+	margin-left: 230px;
 }
 fieldset legend{
 	font-weight: bold;
+}
+#navButtons{
+	padding-right: 203px;
+}
+#name{
+	width: 295px;
 }
 select{
 	width : 300px;
