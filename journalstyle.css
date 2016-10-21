@@ -10,7 +10,7 @@ h1{
 	background-size: 25%;
 	margin: 0 auto;
 	width: 960px;
-	margin-left:500px;
+	margin-left:550px;
 	
 }
 
@@ -23,7 +23,7 @@ h1{
 }
 .p_Info label{
 	float: left;
-	width: 150px;
+	width: 88px;
 }
 
 fieldset{
@@ -32,6 +32,9 @@ fieldset{
 }
 fieldset legend{
 	font-weight: bold;
+}
+#name{
+	width: 295px;
 }
 select{
 	width : 300px;
