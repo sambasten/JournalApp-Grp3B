@@ -3,16 +3,14 @@
 <head>
 	<title>MY JOURNAL</title>
 	<link rel = "stylesheet" href = "journalstyle.css"/>
-<script type = "text/javascript" src="jquery-2.1.1.js"></script>
+	<script type = "text/javascript" src="jquery-2.1.1.js"></script>
 </head>
 <body>
 	<div class = "header">
 		<h1>Journal logo</h1>
 	</div>
-	
+			
 	<div class = "wrapper">
-		<marquee direction = "left" scrolldelay ="150" class ="scroll">
-			<p>REFLECTION IS AN IMPORTANT PART OF LEARNING AND GROWTH. KEEP A JOURNAL TODAY</p></marquee>
 		<div>
 			<form action = "" method = "GET" >
 			<div id = "form">
@@ -20,7 +18,7 @@
 				<legend>Bio Data:</legend>
 					<p><label for ="first name">Name: </label>
 					<input type ="text" name = "name" id = "name"/></p>
-			</fieldset><br/>
+			</fieldset><br/><br/>
 			<fieldset>
 				<legend>Daily Activities:</legend>
 				<p><label for ="Week">Week Days: </label>
@@ -35,25 +33,39 @@
 				</select></p>
 				<p><label for ="Question" >What did you do today?: </label></p>
 				<p><textarea id = "log" name = "Activities"></textarea></p>
-				<p><input id = "submit" type = "submit" value = "Log My Journal"></p>
-			</fieldset><br/>
-		</fieldset>
-	 </div>
-			<fieldset>
+				<p><button id="submit">Log My Journal</button></p>
+			</fieldset>
+		 </div>
+		</form>
+		</div>
+		<div id="navButtons">
+			<button id ="viewForm">Go Back to Form</button>
+			<button id="viewAllLists">View all Lists</button>
+		</div>
+
+		<div>
+			<fieldset class = "p_Info">
 				<legend>My Journal:</legend>
 					<div id="display">name</div>
 					<div id="display-activites"><p><label for ="Answer" >What I did today: </label></p></div>
 			</fieldset>
-			</form>
 		</div>
+		<div>
+			<fieldset>
+				<legend>List Of Journals</legend>
+			</fieldset>
+		</div>
+
 
 		
 	</div>
 <footer>
 <div class = "footer"><br/>
 	<a href="">Legal Information</a> | 
-	<a href="">Privacy Policy</a> | <a href="">Terms of Use</a>| Copyright &copy; BootCamp Group III 2016
+	<a href="">Privacy Policy</a> | <a href="">Terms of Use</a>| 
+	Copyright &copy; BootCamp Group III 2016
 	</div>
 </footer>
+<script type = "text/javascript" src="index.js"></script>
 </body>
 </html>

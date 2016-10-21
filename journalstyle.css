@@ -10,13 +10,10 @@ h1{
 	background-size: 25%;
 	margin: 0 auto;
 	width: 960px;
-	margin-left:550px;
+	margin-left:500px;
 	
 }
-#name{
-	width: 295px;
-	margin-right: 100px;
-}
+
 .wrapper{
 	margin: 0 auto;
 	width: 960px;
@@ -26,7 +23,7 @@ h1{
 }
 .p_Info label{
 	float: left;
-	width: 88px;
+	width: 150px;
 }
 
 fieldset{
@@ -55,4 +52,7 @@ p #submit{
 #submit{
 
 	margin-left: 180px;
+}
+#navButtons{
+float:right;
 }
