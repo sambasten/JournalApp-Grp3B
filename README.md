@@ -4,6 +4,6 @@ This is a journal application that allows a user to store his/her thoughts and i
 
 - Create a journal
 - Create a journal entry
-- View previous entries he has created
+- View previous entries he/she has created
 
 ### Authors: Akinwumi Samuel, Are Jorg, Rotimi Babalola, Oluwole Fasakin and Ijege Precious
