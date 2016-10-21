@@ -1,4 +1,35 @@
-function Data(){
+
+
+
+// function _(id) {
+// 	return document.getElementById(id);
+// }
+// var user = _('name').value;
+// var day = _('day').value;
+// var activities = _('log').value;
+// function getFormData(event) {
+// 	event.preventDefault();
+// 	if (user === "" || date === "" || activities === "") {
+// 		alert("No fields should be empty");
+// 		// return;
+// 	}
+// 	alert("ok");
+// 	_("form").style.display = "none";
+	
+// 	// var dummy = new Journal(user, date, activities);
+// 	// dummy.saveInObj();
+// }
+
+function displayInfo() {
+
+}
+
+
+function start(){
+	function _(id) {
+	return document.getElementById(id);
+}
+	function Data(){
 	this.data = [];
 	this.addData = function (obj) {
 		this.data.push(obj);
@@ -14,17 +45,15 @@ function Data(){
 	}
 
 }
-function Journal(user, gender, date, activities) {
+function Journal(user, date, activities) {
 	this.journals = {};
 	this.data = [];
 	this.user = user;
-	this.gender = gender;
 	this.date = date;
 	this.activities = activities;
 	
 	this.saveInObj = function () {
 		this.journals.user = this.user;
-		this.journals.gender = this.gender;
 		this.journals.date = this.date;
 		this.journals.activities = this.activities;
 		return this.journals;
@@ -32,11 +61,22 @@ function Journal(user, gender, date, activities) {
 
 	
 }
-var getJournals = new Data();
-var dummy1 = new Journal("jorg", "M", "34", "I am a boy");
-var dummy2 = new Journal("are", "F", "23", "I am a girl");
-dummy1.saveInObj();
-dummy2.saveInObj();
-getJournals.addData(dummy1.saveInObj());
-getJournals.addData(dummy2.saveInObj());
-console.log(getJournals.getLastData());
+	var getJournals = new Data();
+	document.getElementById('submit').addEventListener('click', function () {
+		var user = _("name").value;
+		var day = _('day').value;
+		var activities = _('log').value;
+		event.preventDefault();
+		if (user === "" || day === "" || activities === "") {
+			alert("No fields should be empty");
+			return;
+		}
+		var dummy = new Journal(user, day, activities);
+		dummy.saveInObj();
+		_("form").style.display = "none";
+		getJournals.addData(dummy);
+		document.getElementById("display").innerHTML = "Name: "+getJournals.getLastData()['user']+"<br>";
+		document.getElementById("display-activites").innerHTML = "Journal: "+getJournals.getLastData()['activities'];
+}, false);
+}
+window.addEventListener('load',start,false);
