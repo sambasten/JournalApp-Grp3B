@@ -11,7 +11,6 @@ h1{
 	margin: 0 auto;
 	width: 960px;
 	margin-left:550px;
-	
 }
 
 .wrapper{
@@ -28,10 +27,14 @@ h1{
 
 fieldset{
 	background-color: pink;
-	width: 960px;
+	width: 500px;
+	margin-left: 230px;
 }
 fieldset legend{
 	font-weight: bold;
+}
+#navButtons{
+	padding-right: 203px;
 }
 #name{
 	width: 295px;
